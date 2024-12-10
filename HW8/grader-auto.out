@@ -1,0 +1,60 @@
+{'extraCredit': 0,
+ 'fatalError': False,
+ 'maxExtraCredit': 0,
+ 'maxTotalPoints': 0,
+ 'messages': [],
+ 'mode': 'auto',
+ 'parts': [{'description': 'Test formula 1a implementation',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 5,
+            'messages': [],
+            'name': '1a-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'Test formula 1b implementation',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 5,
+            'messages': [],
+            'name': '1b-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'Test formula 1c implementation',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 5,
+            'messages': [],
+            'name': '1c-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'Test formula 1d implementation',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 5,
+            'messages': [],
+            'name': '1d-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'Test formula 1e implementation',
+            'extraCredit': False,
+            'maxPoints': 3,
+            'maxSeconds': 5,
+            'messages': ["Exception thrown: <class 'NotImplementedError'> -- ",
+                         '  File "/Users/minn/Desktop/Done '
+                         'Assignments/AI_HW8/grader.py", line 45, in <lambda>\n'
+                         "    grader.addHiddenPart('1e-1-hidden', lambda : "
+                         "checkFormula('1e', submission.formula1e()), 3, "
+                         "description='Test formula 1e implementation')\n"
+                         '                                                                    '
+                         '^^^^^^^^^^^^^^^^^^^^^^\n',
+                         '  File "/Users/minn/Desktop/Done '
+                         'Assignments/AI_HW8/submission.py", line 53, in '
+                         'formula1e\n'
+                         '    raise NotImplementedError  # remove this line '
+                         'before writing code\n'
+                         '    ^^^^^^^^^^^^^^^^^^^^^^^^^\n'],
+            'name': '1e-1-hidden',
+            'points': 0,
+            'seconds': 0}],
+ 'totalPoints': 0}

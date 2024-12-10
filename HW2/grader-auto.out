@@ -1,0 +1,210 @@
+{'extraCredit': 0,
+ 'fatalError': False,
+ 'maxExtraCredit': 0,
+ 'maxTotalPoints': 14,
+ 'messages': [],
+ 'mode': 'auto',
+ 'parts': [{'description': '',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '1a-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'basic test',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2a-0-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test multiple instances of the same word in a '
+                           'sentence',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2a-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'basic sanity check for learning correct weights on '
+                           'two training and testing examples each',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2b-0-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test correct overriding of positive weight due to '
+                           'one negative instance with repeated words',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2b-1-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test classifier on real polarity dev dataset',
+            'extraCredit': False,
+            'maxPoints': 6,
+            'maxSeconds': 8,
+            'messages': [],
+            'name': '2b-2-basic',
+            'points': 6,
+            'seconds': 1},
+           {'description': 'test basic ngram features',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2c-0-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test feature extraction on random sentence and '
+                           'random length',
+            'extraCredit': False,
+            'maxPoints': 2,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '2c-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'test forward function on XOR dataset',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '3a-0-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test forward function on random data',
+            'extraCredit': False,
+            'maxPoints': 3,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '3a-1-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'test loss function on XOR dataset',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '3b-0-basic',
+            'points': 1,
+            'seconds': 0},
+           {'description': 'test backward function on XOR dataset',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 1,
+            'messages': ["Expected '{'W1': array([[-0.00017901,  0.11980031,  "
+                         '0.00514622, -0.06293203, -0.05433818,\n'
+                         '        -0.01238167, -0.01461798,  0.01613166,  '
+                         '0.04126251, -0.01458624,\n'
+                         '        -0.02073736,  0.030957  ,  0.01032425,  '
+                         '0.01136519,  0.01484782,\n'
+                         '         0.02837492],\n'
+                         '       [ 0.00045162, -0.02365028,  0.02547818,  '
+                         '0.00610173,  0.02594611,\n'
+                         '         0.01474015,  0.05141377, -0.03852162,  '
+                         '0.01807816,  0.0240724 ,\n'
+                         '         0.00229582,  0.00426998, -0.03126768,  '
+                         '0.00806802,  0.01367728,\n'
+                         "        -0.05103786]]), 'b1': array([[ 0.00106607, "
+                         '-0.0552891 ,  0.16018339,  0.04599698,  0.04563665,\n'
+                         '         0.02423702,  0.08237003, -0.05984813, '
+                         '-0.05154594,  0.03923213,\n'
+                         '         0.01710336, -0.0267356 , -0.04992217, '
+                         '-0.01620964,  0.10347403,\n'
+                         "        -0.0792793 ]]), 'W2': array([[0.10873962],\n"
+                         '       [0.08720741],\n'
+                         '       [0.16945497],\n'
+                         '       [0.13357918],\n'
+                         '       [0.09288733],\n'
+                         '       [0.1291229 ],\n'
+                         '       [0.08088964],\n'
+                         '       [0.16136131],\n'
+                         '       [0.09679866],\n'
+                         '       [0.12808811],\n'
+                         '       [0.13931845],\n'
+                         '       [0.0557765 ],\n'
+                         '       [0.17144842],\n'
+                         '       [0.07860855],\n'
+                         '       [0.16975627],\n'
+                         "       [0.0702388 ]]), 'b2': array([[0.270077]])}', "
+                         "but got '{'W1': array([[-3.54915858e-05,  "
+                         '2.87642529e-02,  2.06221238e-03,\n'
+                         '        -1.49496473e-02, -1.28276369e-02, '
+                         '-2.77481863e-03,\n'
+                         '        -2.94136649e-03,  3.38844036e-03,  '
+                         '9.81909338e-03,\n'
+                         '        -3.17393070e-03, -4.90988982e-03,  '
+                         '7.53155135e-03,\n'
+                         '         2.09660560e-03,  2.72481681e-03,  '
+                         '4.03853834e-03,\n'
+                         '         6.31906169e-03],\n'
+                         '       [ 1.52994720e-04, -8.15164778e-03,  '
+                         '1.11387884e-02,\n'
+                         '         4.12372644e-03,  8.44982821e-03,  '
+                         '4.83426311e-03,\n'
+                         '         1.52094937e-02, -1.19604445e-02,  '
+                         '2.01926804e-03,\n'
+                         '         7.77811201e-03,  1.53609735e-03,  '
+                         '7.69258540e-04,\n'
+                         '        -9.55244358e-03,  1.34609807e-03,  '
+                         '5.86960200e-03,\n'
+                         "        -1.49625013e-02]]), 'b1': array([ "
+                         '0.00025523, -0.01094911,  0.03818121,  0.01016825,  '
+                         '0.01008462,\n'
+                         '        0.00576541,  0.01944495, -0.01431423, '
+                         '-0.01167586,  0.00940228,\n'
+                         '        0.00383617, -0.00540189, -0.01190212, '
+                         '-0.00363663,  0.02459123,\n'
+                         "       -0.01838725]), 'W2': array([[0.02592861],\n"
+                         '       [0.01618107],\n'
+                         '       [0.04109348],\n'
+                         '       [0.03515412],\n'
+                         '       [0.01865205],\n'
+                         '       [0.02978488],\n'
+                         '       [0.0169295 ],\n'
+                         '       [0.03982454],\n'
+                         '       [0.02591642],\n'
+                         '       [0.03107597],\n'
+                         '       [0.03060926],\n'
+                         '       [0.01895868],\n'
+                         '       [0.04270557],\n'
+                         '       [0.02197725],\n'
+                         '       [0.04173252],\n'
+                         "       [0.01357915]]), 'b2': array([0.06482755])}'"],
+            'name': '3b-1-basic',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'test backward function on random data',
+            'extraCredit': False,
+            'maxPoints': 6,
+            'maxSeconds': 1,
+            'messages': [],
+            'name': '3b-2-hidden',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'test train function on XOR dataset',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 10,
+            'messages': ["Expected '0.02855617', but got "
+                         "'0.41478004545755953'"],
+            'name': '3c-0-basic',
+            'points': 0,
+            'seconds': 0},
+           {'description': 'test train function on random data',
+            'extraCredit': False,
+            'maxPoints': 1,
+            'maxSeconds': 10,
+            'messages': [],
+            'name': '3c-1-hidden',
+            'points': 0,
+            'seconds': 0}],
+ 'totalPoints': 12}
